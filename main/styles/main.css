@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100vh;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  color: red;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+#world {
+  display: inline-block;
+}
+.square {
+  height: 30px;
+  width: 30px;
+}
+.row {
+  display: flex;
+}
+.floor {
+  background-image: url("../images/sprites.png");
+  background-position: -120px 0;
+  background-color: blue;
+}
+.wall {
+  background-image: url("../images/sprites.png");
+  background-position: -120px -30px;
+  background-color: gray;
+}
+.cible {
+  background-image: url("../images/sprites.png");
+  background-position: -180px 0;
+  background-color: green;
+}
+.box {
+  background-image: url("../images/sprites.png");
+  background-position: -150px 0;
+  background-color: yellow;
+}
+.target {
+  background-image: url("../images/sprites.png");
+  background-position: -150px -30px;
+  background-color: red;
+}
+.player {
+  background-image: url("../images/sprites.png");
+  background-position: -30px 0px;
+  background-color: mediumslateblue;
+}
+
+@keyframes mon-animation{
+  form{
+    background-position: -30px 0px;
+  }
+  to{
+    background-position: -30px -30px;
+  }
+}
+

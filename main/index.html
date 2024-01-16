@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sokobon - Webg2</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/state.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/levels.js"></script>
+    <link rel="shortcut icon" href="images/box.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h1>Sokoban</h1>
+        <p>Coming soon...</p>
+    </header>
+    <main>
+        <p>Nombre de déplacement : <span id="nb_move"></span></p>
+        <div id="world">
+        </div>
+        <br>
+        <button type="button" id="reload" onclick="initLevel()">Recommencer</button>
+        <button type="button" id="reload" onclick="annulation()">Annuler</button>
+        <button type="button" onclick="reset()">Reset Score</button><br>
+        <p>Target : <span id="target">/</span></p>
+        <p>Best : <span id="best"></span></p>
+    </main>
+    <footer>
+        <p> Larsimont Théo</p>
+    </footer>
+</body>
+
+</html>
